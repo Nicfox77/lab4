@@ -17,6 +17,7 @@ app.get('/', async (req, res) => {
 
 app.get('/earth', (req, res) => {
     let planetEarth = planets.getEarth();
+    console.log(planetEarth);
     res.render('earth', { planetEarth });
 });
 
